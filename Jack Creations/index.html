@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Creations</title>
+    <link href="stle.css" rel="stylesheet" type="text/css">
+    <style>
+        *,
+        *::before
+        *::after{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(kilmal.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:  68px;
+    
+}
+.navbar h1{
+    background: white;
+    padding: 4px 8px;
+    color: orange;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.navbar h1:hover{
+    color: orangered;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+nav ul li:hover::after{
+    width: 100%;
+
+}
+.navbar form{
+    background: white;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+
+}
+.navbar form input{
+    padding: 5px 8;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+
+}
+.btn{
+    padding: 6px 6px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: orangered;
+    box-shadow: 48px 0 100px orangered, -48px 100px orangered;
+}
+.content{
+    margin-top: 10%;
+    max-width: 500px;
+
+}
+.content h2{
+    color: white;
+    font-size: 40px;
+}
+.content span{
+    color: orange;
+    transform: 0.5s;
+    cursor: pointer;
+    font-weight: 900;
+}
+.content span:hover{
+    color: orangered;
+}
+.content p{
+    color: white;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 20px 0;
+}
+.common-btn{
+    width: 150px;
+    padding: 15px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background: orange;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+   
+}
+ .common-btn:hover{
+    background: orangered;
+    box-shadow: 40px 0 100px orangered, -40px 0 1000px orangered;
+ }
+ .login-box{
+    width: 250px;
+    height: 400px;
+    background: orange;
+    top: 170px;
+    left: 925px;
+    position: absolute;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: 0.5s;
+    padding: 30px 30px;
+    box-sizing: border-box;
+
+
+ }
+ .login-box:hover{
+    background: orangered;
+    box-shadow: 40px 0 100px orangered, -40px 0 100px orangered;
+
+ }
+ .login-box h3{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+ }
+ .login-box h3:hover{
+    color: orangered;
+
+
+ }
+.login-box label{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ .login-box input{
+    width: 100%;
+    margin-bottom: 10px;
+
+ }
+ .login-box input[type="text"], input[type="password"]{
+    height: 35px;
+    padding: 0 0 5px;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+
+ }
+ .login-box input[type="button"]{
+    height: 40px;
+    border: 0;
+    outline: 0;
+    color: orange;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+
+ }
+ .login-box input[type="button"]:hover{
+    background: orange;
+    color: white;
+ }
+ .links{
+    text-align: center;
+    margin-top: 10px;
+    
+ }
+ .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    
+ }
+.signup{
+    border: 1px solid white;
+    padding: 8px ;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.signup:hover{
+    background: orange;
+    box-shadow: 40px 0 100px orange, -40px 0 100px orange;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">CONTACT</a></li>
+                </ul>
+           </nav>
+            <form>
+                <input type="text" name="" id="" placeholder="Type To Search">
+                <button type="button" class="btn">Search</button>
+
+            </form>
+        </div>
+        <div class="content">
+            <h2>Web Designer & <br><span>Development</span><br>Course</h2>
+            <p>I'm Mr Teslaman , a Web designer who is aiming at reaching many people in the world. Learn css,Html,javascript,python and other programming languages. </p>
+            <button type="button" class="common-btn">Enroll</button>
+            <button type="button" class="common-btn">Sign Up</button>
+        </div>
+        <div class="login-box">
+            <h3>Login Here</h3>
+        <form>
+            <label>Email</label>
+            <input type="text" name="" id="" placeholder="Enter Email">
+            <label>Password</label>
+            <input type="password" name="" id="" placeholder="Enter Password">
+            <input type="button" name="" id="" value="Login">
+        </form>
+        <div class="links">
+        <a href="#">Dont Have Account?</a><br>
+        <a href="#" class="signup">SIGN UP</a>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
